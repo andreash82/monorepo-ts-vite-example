@@ -14,6 +14,7 @@ Uses [pnpm](https://pnpm.io/) for package management.
 
 ## dev hints
 
+- [storybook-builder-vite](https://github.com/eirslett/storybook-builder-vite) is experimental!
 - tsconfig.json: non-emitting settings (e.g. for support in IDE)
 - tsconfig.build.json: emitting build config for esm module
 - tsconfig.build-cjs.json: emitting build config for commonjs variant
@@ -22,6 +23,6 @@ Uses [pnpm](https://pnpm.io/) for package management.
 - packages should reference their direct dependencies in their tsconfig.json by tsconfig.build.json of the referenced package
 - storybook app: vitejs config goes to .storybook/main.js -> viteFinal, no vitejs.config.ts required
 
-storybook (with vite) requires `shamefully-hoist=true` in .npmrc for now :(
+storybook (with storybook-builder-vite) requires `shamefully-hoist=true` in .npmrc for now :(
 
 css in single sass package is inspired by the way how @adobe/react-spectrum handles it ;)
