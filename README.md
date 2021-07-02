@@ -23,3 +23,5 @@ Uses [pnpm](https://pnpm.io/) for package management.
 - storybook app: vitejs config goes to .storybook/main.js -> viteFinal, no vitejs.config.ts required
 
 storybook (with vite) requires `shamefully-hoist=true` in .npmrc for now :(
+
+css in single sass package is inspired by the way how @adobe/react-spectrum handles it ;)
