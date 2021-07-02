@@ -1,0 +1,33 @@
+{
+  "name": "@moreptsviteex/package-a",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./*": "./*"
+  },
+  "scripts": {
+    "build": "npm-run-all clean --parallel build:*",
+    "clean": "rimraf dist/*",
+    "build:esm": "tsc -b tsconfig.build.json",
+    "build:cjs": "tsc -b tsconfig.build-cjs.json",
+    "verify": "run-p prettier lint"
+  },
+  "dependencies": {
+    "@moreptsviteex/package-b": "*",
+    "@moreptsviteex/sass": "*",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/css-modules": "^1.0.2",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  }
+}

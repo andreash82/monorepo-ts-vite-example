@@ -1,0 +1,1 @@
+export { MyComp } from './MyComp'

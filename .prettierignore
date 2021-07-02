@@ -1,0 +1,12 @@
+node_modules
+.vscode
+.idea
+.git
+package.json
+package-lock.json
+pnpm-lock.yaml
+dist
+lib
+*.svg
+storybook-static
+coverage

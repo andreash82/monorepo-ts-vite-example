@@ -1,0 +1,11 @@
+*/**.js
+*/**.d.ts
+dist
+lib
+storybook_static
+*.svg
+.idea
+.vscode
+.git
+package-lock.json
+pnpm-lock.yaml

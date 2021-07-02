@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/mjs",
+    "declarationDir": "./dist/types",
+    "rootDir": "./src",
+    "baseUrl": "./",
+    "composite": true,
+    "noEmit": false,
+    "emitDeclarationOnly": false,
+    "declaration": true
+  },
+  "include": ["./src"],
+  "exclude": ["dist", "**/*.spec*", "**/*.e2e*", "**/*.test.ts"]
+}

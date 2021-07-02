@@ -1,0 +1,30 @@
+{
+  "name": "@moreptsviteex/package-b",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+     ".": {
+       "import": "./dist/mjs/index.js",
+       "require": "./dist/cjs/index.js"
+     },
+    "./*": "./*"
+   },
+  "scripts": {
+    "test": "jest",
+    "build": "npm-run-all clean --parallel build:*",
+    "clean": "rimraf dist/*",
+    "build:esm": "tsc -b tsconfig.build.json",
+    "build:cjs": "tsc -b tsconfig.build-cjs.json"
+  },
+  "author": "bla",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  }
+}

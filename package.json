@@ -1,0 +1,49 @@
+{
+  "name": "monorepo-ts-vite-example",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "prettier": "prettier --write '**/*{ts,tsx,js,jsx,json,md}'",
+    "lint": "eslint . --fix --ext .ts,.tsx",
+    "test": "NODE_ENV=development pnpm run -r test",
+    "build": "pnpm run -r build",
+    "clean": "pnpm run -r clean"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces":[
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.2",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "@babel/eslint-parser": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-prettier-standard": "^4.0.1",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-flowtype": "^5.7.2",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "typescript":"^4.3.2",
+    "jest": "^27.0.4",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.1",
+    "prettier-config-standard": "^4.0.0",
+    "ts-jest": "^27.0.3",
+    "tsconfig-paths-jest": "^0.0.1"
+
+  }
+}
