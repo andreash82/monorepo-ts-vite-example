@@ -1,1 +1,2 @@
-export { MyComp } from './MyComp'
+
+export * from './MyComp'
